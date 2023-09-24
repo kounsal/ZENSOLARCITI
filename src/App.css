@@ -331,9 +331,14 @@ section {
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
-  background: #fff;
-  
- 
+  /* background: #fff; */
+  background: #0087e33d;  /*custom*/
+  height: 32.5rem;      /*custom*/
+  width:18.5rem; /*custom*/
+  margin: 0px 20px;/*custom*/
+  border-radius: 40px; /* Adjust the value to your desired border radius   custom*/
+
+
 }
 
 .whyus .icon-box .icon {

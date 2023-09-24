@@ -1,0 +1,28 @@
+/* Custom styles */
+.full-height {
+    height: 30vh;
+}
+#hero {
+    background-image: url('../assets/hero-img.png'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    /* You can add more background properties like background-color, etc. */
+  }
+  .blue-text {
+    color: #070769; /* or any other shade of blue you prefer */
+  }
+  
+.transparent-heading {
+    font-size: 44px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* background: linear-gradient(to right, #d2691e, #3333ff); Update the gradient colors */
+    background: linear-gradient(to right, #fc7718, #0d0dd4); /* Update the gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent where the background is applied */
+}
+

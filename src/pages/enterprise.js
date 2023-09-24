@@ -9,7 +9,6 @@ class Entp extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <section className="Entp">
           <div className="header_section">
             <div className="header_left">
@@ -26,9 +25,7 @@ class Entp extends Component {
                 </p>
                 <div className="btn_main">
                   <div className="contact_bt">
-                  <NavLink  to="/Contact">
-                           Contact Us
-                 </NavLink>
+                    <NavLink to="/Contact">Contact Us</NavLink>
                   </div>
                 </div>
               </div>
@@ -300,10 +297,14 @@ class Entp extends Component {
           </div>
         </section>
         <section className="Entp">
-        <div class="row justify-content-center" style={{paddingTop:"60px"}}>
-        <button type="button" class="btn btn-outline-primary custom-bttn" >Get In Touch</button>
-        </div>
-        
+          <div
+            class="row justify-content-center"
+            style={{ paddingTop: "60px" }}
+          >
+            <button type="button" class="btn btn-outline-primary custom-bttn">
+              Get In Touch
+            </button>
+          </div>
         </section>
         <Footer />
       </>
