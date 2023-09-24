@@ -1,0 +1,62 @@
+.imagecust{
+    height: auto;
+    width: 100%;
+    top: 0;
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  @media (max-width: 600px) {
+    .imagecust {
+      width: 100%;
+    }
+  }
+  .cont{
+    position: absolute;
+  margin: 20px;
+  width: auto;
+  }
+  .invest{
+    font-family: 'Roboto', sans-serif; 
+  }
+.investhead{
+    font-size: 32px;
+    font-weight: 550;
+    color: #000000;
+    margin-top: 20px;
+    
+}
+.investdata{
+  font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+ 
+}
+
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+ 

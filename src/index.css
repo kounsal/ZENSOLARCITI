@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../src/assets/fonts/Acworth-Sans-Serif-Font/Acworth-Bold.otf) format('woff');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
