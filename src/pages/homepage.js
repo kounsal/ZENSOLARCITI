@@ -168,13 +168,11 @@ class Homepage extends React.Component {
 
             {/* Model Section*/}
 
-            <section id="models" className="models">
+            <section id="models" className="models" style={{ background: '#F68E3C' ,paddingBottom:"100px"}}>
                <div className="container" data-aos="fade-up">
-                  <div className="section-title">
+                  <div className="section-model">
                      <h2>Our Models</h2>
-                     <p>
-                     Energy Empowerment Simplified: Select Your Subscription Model Today.
-                     </p>
+                     
                   </div>
                   <div className="row">
                      <div
@@ -199,9 +197,10 @@ class Homepage extends React.Component {
                                  lower subscription rates
                               </li>
                            </ul>
-                           <a href="#" className="buy-btn">
-                              Get Started
-                           </a>
+                           <center>   
+                           <a href="#" className="buy-btn ">
+                              <div className ="text">Get Started</div></a>
+                           </center>  
                         </div>
                      </div>
                      <div
@@ -210,22 +209,22 @@ class Homepage extends React.Component {
                         data-aos-delay={200}
                      >
                         <div className="box featured">
-                           <h2>
+                           <h2 >
                               Subscription
-                              <br /> Model
+                               Model
                            </h2>
-                           {/* <h4>
-            <sup>$</sup>29<span>per month</span>
-          </h4> */}
+                        
                            <ul>
                               <li>
                                  <i class="fa-solid fa-check fa-fw" />
                                  Reduction in the home electricity bill
                               </li>
+                              
                            </ul>
-                           <a href="#" className="buy-btn">
-                              Get Started
-                           </a>
+                         <center>   
+                           <a href="#" className="buy-btn ">
+                              <div className ="text">Get Started</div></a>
+                           </center>                           
                         </div>
                      </div>
                      <div
@@ -238,9 +237,7 @@ class Homepage extends React.Component {
                               Solar Credits <br />
                               and Bonds{" "}
                            </h2>
-                           {/* <h4>
-            <sup>$</sup>49<span>per month</span>
-          </h4> */}
+                         
                            <ul>
                               <li>
                                  <i class="fa-solid fa-check fa-fw" />
@@ -248,9 +245,10 @@ class Homepage extends React.Component {
                                  bulk
                               </li>
                            </ul>
-                           <a href="#" className="buy-btn">
-                              Get Started
-                           </a>
+                           <center>   
+                           <a href="#" className="buy-btn ">
+                              <div className ="text">Get Started</div></a>
+                           </center>  
                         </div>
                      </div>
                      <div
@@ -263,9 +261,7 @@ class Homepage extends React.Component {
                               Solar Credits <br />
                               Trading{" "}
                            </h2>
-                           {/* <h4>
-            <sup>$</sup>49<span>per month</span>
-          </h4> */}
+                        
                            <ul>
                               <li>
                                  <i class="fa-solid fa-check fa-fw" />
@@ -273,9 +269,10 @@ class Homepage extends React.Component {
                                  the individuals
                               </li>
                            </ul>
-                           <a href="#" className="buy-btn">
-                              Get Started
-                           </a>
+                           <center>   
+                           <a href="#" className="buy-btn ">
+                              <div className ="text">Get Started</div></a>
+                           </center>  
                         </div>
                      </div>
                   </div>
@@ -296,10 +293,9 @@ class Homepage extends React.Component {
                            <div className="address">
                               <i class="fa-solid fa-location-dot"></i>
                               <h4>Location:</h4>
-                              <p>3 Holton Road 
-Lexington 
-Massachusetts 
-MA 02421</p>
+                              <p>177 Huntington Ave, 
+                              Boston, Massachusetts
+                              02115, US</p>
                            </div>
                            <div className="email">
                               <i class="fa-solid fa-envelope"></i>
@@ -309,7 +305,7 @@ MA 02421</p>
                            <div className="phone">
                               <i class="fa-solid fa-phone"></i>
                               <h4>Call:</h4>
-                              <p>+1 (781) 971-6828</p>
+                              <p>+1 781 325 1852</p>
                            </div>
                            <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.845963127622!2d-71.26236858780574!3d42.4522934291486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39c3cc4e45f9f%3A0x9fc0240788c3f29d!2s3%20Holton%20Rd%2C%20Lexington%2C%20MA%2002421%2C%20USA!5e0!3m2!1sen!2sin!4v1692821242937!5m2!1sen!2sins"
