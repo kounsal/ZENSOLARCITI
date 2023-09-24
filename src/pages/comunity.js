@@ -5,7 +5,6 @@ class Community extends Component {
   render() {
     return (
       <>
-        <Navbar />
         <section id="hero">
       
           <div className="container">
@@ -151,86 +150,95 @@ class Community extends Component {
           </div>
         </section>
         <section id="whyus" className="whyus section-bg Entp">
-               <div className="container" data-aos="fade-up">
-                  <div className="section-title">
-                     <h2 className="text-center">Why Zen Solarciti</h2>
+          <div className="container" data-aos="fade-up">
+            <div className="section-title">
+              <h2 className="text-center">Why Zen Solarciti</h2>
+            </div>
+            <div className="row">
+              <div
+                className="col-xl-3 col-md-6 d-flex align-items-stretch text-center"
+                data-aos="zoom-in"
+                data-aos-delay={100}
+              >
+                <div className="icon-box ">
+                  <div className="icon text-center">
+                    <i class="fa-solid fa-earth-americas"></i>
                   </div>
-                  <div className="row">
-                     <div
-                        className="col-xl-3 col-md-6 d-flex align-items-stretch text-center"
-                        data-aos="zoom-in"
-                        data-aos-delay={100}
-                     >
-                        <div className="icon-box ">
-                           <div className="icon text-center">
-                           <i class="fa-solid fa-earth-americas"></i>
-                           </div>
-                           <h4 className="text-center">
-                              <a href>Secure Our Planet's Future:</a>
-                           </h4>
-                          
-                         <p>
-                         Zen Solarciti Lights Your Path to a Cleaner, Brighter Future. Choose Sustainable Energy, Safeguarding Our Planet for Generations to Come.
-                         </p>
-                        </div>
-                     </div>
-                     <div
-                        className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 text-center"
-                        data-aos="zoom-in"
-                        data-aos-delay={200}
-                     >
-                        <div className="icon-box">
-                           <div className="icon">
-                          
-                           <i class="fa-solid fa-wallet"></i>
-                           </div>
-                           <h4>
-                              <a href>Savings That Shine:</a>
-                           </h4>
-                          <p>
-                          Your Investment, Multiplied. Bid Farewell to High Bills, Embrace Substantial Savings. Our Solar Solutions Cut Costs, Unlock Incentives, and Tax Benefits, Smart Financial Choice for You
-                          </p>
-                           
-                        </div>
-                     </div>
-                     <div
-                        className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 text-center"
-                        data-aos="zoom-in"
-                        data-aos-delay={300}
-                     >
-                        <div className="icon-box">
-                           <div className="icon">
-                           <i class="fa-solid fa-users"></i>
-                           </div>
-                           <h4>
-                              <a href>Join a Community of Changemakers:</a>
-                           </h4>
-                           
-                        <p>
-                        Zen Solarciti Values Sustainability, Progress, Positive Change. Embrace Solar Energy – Contribute to Global Shift Toward Clean Practices. Unite with Like-Minded Visionaries Shaping a Better Tomorrow.
-                        </p>
-                        </div>
-                     </div>
-                     <div
-                        className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 text-center"
-                        data-aos="zoom-in"
-                        data-aos-delay={400}
-                     >
-                        <div className="icon-box">
-                           <div className="icon">
-                           <i class="fa-solid fa-house"></i>
-                           </div>
-                           <h4>
-                              <a href>Simplifying Solar Power for You</a>
-                           </h4>
-                          <p>
-                          Zen Solarciti's Expertise Makes Clean Energy Accessible. Tailored Solutions for Homes, Businesses, Communities. Reliable Energy, Reduced Bills. Choose Zen Solarciti for a Greener, More Accessible Future.
-                          </p>
-                        </div>
-                     </div>
+                  <h4 className="text-center">
+                    <a href>Secure Our Planet's Future:</a>
+                  </h4>
+
+                  <p>
+                    Zen Solarciti Lights Your Path to a Cleaner, Brighter
+                    Future. Choose Sustainable Energy, Safeguarding Our Planet
+                    for Generations to Come.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 text-center"
+                data-aos="zoom-in"
+                data-aos-delay={200}
+              >
+                <div className="icon-box">
+                  <div className="icon">
+                    <i class="fa-solid fa-wallet"></i>
                   </div>
-               </div>
-            </section>
+                  <h4>
+                    <a href>Savings That Shine:</a>
+                  </h4>
+                  <p>
+                    Your Investment, Multiplied. Bid Farewell to High Bills,
+                    Embrace Substantial Savings. Our Solar Solutions Cut Costs,
+                    Unlock Incentives, and Tax Benefits, Smart Financial Choice
+                    for You
+                  </p>
+                </div>
+              </div>
+              <div
+                className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 text-center"
+                data-aos="zoom-in"
+                data-aos-delay={300}
+              >
+                <div className="icon-box">
+                  <div className="icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <h4>
+                    <a href>Join a Community of Changemakers:</a>
+                  </h4>
+
+                  <p>
+                    Zen Solarciti Values Sustainability, Progress, Positive
+                    Change. Embrace Solar Energy – Contribute to Global Shift
+                    Toward Clean Practices. Unite with Like-Minded Visionaries
+                    Shaping a Better Tomorrow.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0 text-center"
+                data-aos="zoom-in"
+                data-aos-delay={400}
+              >
+                <div className="icon-box">
+                  <div className="icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <h4>
+                    <a href>Simplifying Solar Power for You</a>
+                  </h4>
+                  <p>
+                    Zen Solarciti's Expertise Makes Clean Energy Accessible.
+                    Tailored Solutions for Homes, Businesses, Communities.
+                    Reliable Energy, Reduced Bills. Choose Zen Solarciti for a
+                    Greener, More Accessible Future.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Footer />
       </>
