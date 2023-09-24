@@ -32,8 +32,14 @@ class Homepage extends React.Component {
       );
       return (
          <>
-            <Navbar />
-            <section id="hero">
+         <div className="bg-img">
+         <Navbar />
+         </div>
+            
+            
+            
+            {/* <section id="hero">
+               
           <div className="container">
             <div className="row">
               <div
@@ -64,7 +70,7 @@ class Homepage extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
             {/* <section className="cont1">
             <div class="container-fluid text-center " >
                 <div className="row">

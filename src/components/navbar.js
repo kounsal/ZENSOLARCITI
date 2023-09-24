@@ -10,7 +10,7 @@ class Navbar extends Component {
                <a className="navbar-brand" href="/">
                   <img
                      src={require("../assets/zen_solarciti.png")}
-                     height="80px"
+                     height="50px"
                   />
                </a>
                <button
