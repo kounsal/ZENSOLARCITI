@@ -34,6 +34,24 @@ class Homepage extends React.Component {
          <>
          <div className="bg-img">
          <Navbar />
+         <div className="row">
+         <center>
+            <div
+                className="col-lg-12  justify-content-center "
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
+                <h1>COMMUNITY SOLAR FOR HOMEOWNERS AND RENTERS</h1>
+                <h2>
+                  Community solar farms in Massachusetts enable multiple
+                  participants to share solar power benefits without individual
+                  installations.
+                </h2>
+              
+              </div></center>
+         
+         
+         </div>
          </div>
             
             

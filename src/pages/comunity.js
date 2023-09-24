@@ -7,6 +7,7 @@ class Community extends Component {
       <>
         <Navbar />
         <section id="hero">
+      
           <div className="container">
             <div className="row">
               <div
