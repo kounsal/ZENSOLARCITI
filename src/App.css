@@ -134,6 +134,26 @@ section {
 .section-bg {
   background-color: #f3f5fa;
 }
+.section-model {
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+.section-model h2 {
+  
+  font-size: 40px; 
+  font-family: Poppins;
+   font-weight: 500; 
+   word-wrap: break-word;
+  padding-bottom: 30pxs;
+  
+  text-transform: uppercase;
+
+
+ 
+  position: relative;
+  color: #ffffff;
+}
 
 .section-title {
   text-align: center;
@@ -475,14 +495,35 @@ section {
 }
 
 .models .featured {
-  border-top-color: #47b2e4;
+  border-top-color: #ff3e03;
+  border-radius: 50px; 
+  border: 2px #000F52 solid;
+ 
+
+}
+.featured h2{
+  text-align: center; color: #000F52; font-size: 24px; font-family: Nunito Sans; font-weight: 700; word-wrap: break-word;width: 201px;
 }
 
 .models .featured .buy-btn {
-  background: #47b2e4;
-  color: #fff;
+  width: 193px; 
+  height: 40px; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  background: #000F52; 
+  border-radius: 10px; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px;
+  display: inline-flex
 }
-
+.models .featured .buy-btn .text
+{color: white;
+   font-size: 16px; 
+   font-family: Poppins; 
+   font-weight: 400; word-wrap: break-word}
 .models .featured .buy-btn:hover {
   background: #23a3df;
 }
