@@ -33,23 +33,29 @@ class Homepage extends React.Component {
       <>
         <div className="bg-img">
           <Navbar />
-          <div className="row">
+          <div
+            className="row justify-content-center align-items-center"
+            style={{ minHeight: "100vh" }}
+          >
             <div
               className="col-lg-6 d-flex flex-column justify-content-center align-items-center pt-4 pt-lg-0 order-2 order-lg-1 bg-transparent"
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              <h1 className="text-center mx-auto">
+              <h1 className="text-center mx-auto font-bold custom-h1 text-white">
                 THE SMARTER, <span className="blue-text">CLIMATE FRIENDLY</span>{" "}
                 ENERGY OPTION
               </h1>
-              <h2 className="text-center mx-auto">
-                No installations, fees or fuss — just easy access to
+              <h2 className="text-center mx-auto custom-h2">
+                No installations, fees, or fuss — just easy access to
                 locally-produced, money-saving solar energy.
               </h2>
-              <div className="d-flex justify-content-center justify-content-lg-start">
-                <a href="#about" className="btn-get-started scrollto">
-                  Get Started
+              <div className="d-flex justify-content-center justify-content-lg-start ">
+                <a href="#about" className="btn-get-started scrollto ">
+                  <button className="custom-button1">Enquiry Now</button>
+                </a>
+                <a href="#about" className="btn-get-started scrollto ">
+                  <button className="custom-button2">Book a meeting</button>
                 </a>
               </div>
             </div>
