@@ -89,7 +89,8 @@ ol {
 }
 
 p {
-     margin: 20px;
+     margin: 20px ;
+     /* custom margin */
      font-weight: 300;
      font-size: 15px;
      line-height: 24px;
@@ -181,8 +182,15 @@ button {
     padding-left: 100px;
 }
 .header_section {
+    /* width: 100%; */
+    /* float: left; */
+    /* text-align: center;  */
+    /* now below is custom  */
     width: 100%;
-    float: left;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .header_bg{
   width: 100%;
@@ -197,6 +205,11 @@ button {
     width: 50%;
     float: left; 
 }
+
+.custom-text-head2{
+    color:#F68E3C
+}
+
 .banner_img{
     width: 100%;
     float: left; 
@@ -212,6 +225,7 @@ button {
 
 
 .banner_main{
+    margin-top: 90px;
     width: 100%;
     float: left;
     padding-left: 100px;
@@ -220,23 +234,34 @@ button {
     width: 100%;
     float: left;
     font-size: 60px;
-    color: #1b5a8d;
+    color:#FEFEFE;
     padding-top: 80px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .banner_text {
-    width: 90%;
-    float: left;
-    font-size: 16px;
-    color: #2e2d2e;
-    margin-left: 0px;
+  
+     width: 90%;
+    /* float: left; */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    /* margin-left: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn_main {
     width: 100%;
-    float: left;
+    /* float: left; */
     padding-top: 75px;
+    /* custom */
+    display: flex;
+  
+    align-items: center;
+    margin-top: 40px;
 }
 .more_bt {
     width: 170px;
@@ -248,7 +273,7 @@ button {
     float: left;
     font-size: 16px;
     color: #000;
-    border: 2px solid #f9b234;
+    border: 2px solid #F68E3C;
     text-align: center;
     padding: 10px 0px;
     border-radius: 40px;
@@ -257,41 +282,84 @@ button {
 }
 .more_bt a:hover {
     color: #000;
-    border: 2px solid #f9b234;
+    border: 2px solid #F68E3C;
 }
 .contact_bt {
-    width: 170px;
-    float: left;
-    margin-left: 15px;
-}
-.contact_bt a {
+    /* width: 170px; */
     width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #181818;
-    border: 2px solid #4aafff;
+    /* float: left; */
+    /* margin-left: 15px; */
+    margin-left: 20px;
+   
+   
+}
+/* .contact_bt a {
+    width: 100%;
+    /* float: left; */
+    /* background-color: #F68E3C;
+    font-size: 16px; */
+    /* color: #181818; */
+    /* color: #FEFEFE;
+    border: 2px solid #F68E3C;
     text-align: center;
-    padding: 10px 0px;
-    border-radius: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none; custom */
+/* } */
+/*  Custom for above 2 a   */
+.contact_bt:first-child a {
+    width: 100%;
+    /* float: left; */
+    background-color: #F68E3C; /* Background color for the first button */
+    font-size: 16px;
+    color: #FEFEFE;
+    border: 2px solid #F68E3C;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none; /* Custom */
 }
-.contact_bt a:hover {
-    color: #181818;
-    border: 2px solid #f9b234;
+
+/* Style for the second button */
+.contact_bt:nth-child(2) a {
+    width: 100%;
+    /* float: left; */
+    background-color: transparent; /* Transparent background for the second button */
+    font-size: 16px;
+    color: #FEFEFE;
+    border: 2px solid #F68E3C;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none; /* Custom */
 }
+ .contact_bt a:hover {
+    color: #FEFEFE;
+      background-color: #F68E3C;
+    border: 2px solid #F68E3C;
+} 
+
+
+
 .services_section {
     width: 100%;
     float: left;
    
     /* background-image: url(../images/services-bg.png); */
-    height: auto;
-    margin-top: 75px;
+    height: 100vh;
+    /* margin-top: 75px; */
+    margin-top: 10px;/*custom*/
     padding-bottom: 60px;
     background-size: 100%;
 }
 
-.services_taital {
+/* .services_taital {
     color: #1b5a8d !important;
     width: 100%;
     float: left;
@@ -300,8 +368,8 @@ button {
     padding-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
-}
-.services_taital::after {
+} */
+/* .services_taital::after {
     content: '';
     background-color: #f9b234;
     position: absolute;
@@ -315,13 +383,17 @@ button {
     height: 7px;
     left: 0;
     border-radius: 100px;
-}
+} */
 .services_text {
     width: 90%;
     float: left;
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: 300;
     color: #060606;
     margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 26.63px;
 }
 .moremore_bt {
     width: 170px;
@@ -346,7 +418,12 @@ button {
     border: 2px solid #f9b234;
 }
 .image_1{
-    max-height: 550px;
+    /* this is overriding the img css */
+    /* max-height: 550px; */
+    max-width: 100%; /* Adjust as needed */
+    max-height: 100%; /* Adjust as needed */
+    width: auto;
+    height: auto;
     
     float: left;
     border-top-right-radius: 20%;

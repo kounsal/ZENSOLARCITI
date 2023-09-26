@@ -9,43 +9,52 @@ class Entp extends Component {
   render() {
     return (
       <>
-        <section className="Entp">
+        <div className="bg-img2">
           <div className="header_section">
             <div className="header_left">
               <div className="banner_main">
-                <h1 className="banner_taital">
-                  Large <br />
-                  Enterprise
+                <h1 className="banner_taital ">
+                  Large <span className="custom-text-head2">Enterprise</span>
                 </h1>
+
                 <p className="banner_text">
                   In the dynamic realm of corporate operations, managing energy
                   costs has evolved into a strategic imperative. Community Solar
                   with ZSC offers a transformative solution for businesses
                   aiming to align with sustainability goals.{" "}
                 </p>
+
                 <div className="btn_main">
                   <div className="contact_bt">
-                    <NavLink to="/Contact">Contact Us</NavLink>
+                    <NavLink to="/Contact">Enquire Now</NavLink>
+                  </div>
+                  <div className="contact_bt">
+                    <NavLink to="/Contact">Book a meeting</NavLink>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="header_right">
-              <img
-                src={require("../assets/img/banner-img.jpg")}
-                className="banner_img imagehide"
-              />
-            </div>
           </div>
-        </section>
+        </div>
+        {/* ////////////////////////////////////////////////////////////////////////// */}
         <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-8 text-center ">
+                      <h2 class="transparent-heading mb-4">
+                        Zen Solar Enterprise Solutions
+                      </h2>
+                    </div>
+                  </div>
+                </div>
                 <div className="col-md-8">
-                  <h1 className="services_taital">
+                  {/* <h1 className="services_taital">
                     Zen Solar Enterprise Solutions
-                  </h1>
+                  </h1> */}
+
                   <p className="services_text">
                     In the dynamic realm of corporate operations, managing
                     energy costs has evolved into a strategic imperative.
