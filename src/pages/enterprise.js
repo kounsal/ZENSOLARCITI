@@ -36,8 +36,8 @@ class Entp extends Component {
             </div>
           </div>
         </div>
-        {/* ////////////////////////////////////////////////////////////////////////// */}
-        <section className="">
+
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -55,7 +55,7 @@ class Entp extends Component {
                     Zen Solar Enterprise Solutions
                   </h1> */}
 
-                  <p className="services_text">
+        {/* <p className="services_text">
                     In the dynamic realm of corporate operations, managing
                     energy costs has evolved into a strategic imperative.
                     Community Solar with ZSC offers a transformative solution
@@ -69,8 +69,8 @@ class Entp extends Component {
                     profitability. Participating in ZSC's initiative enhances
                     your company's reputation as a responsible corporate citizen
                   </p>
-                </div>
-                <div className="col-md-4 col-sm-0">
+                </div> */}
+        {/* <div className="col-md-4 col-sm-0">
                   <div>
                     <img
                       src={require("../assets/solar-field.jpg")}
@@ -81,7 +81,53 @@ class Entp extends Component {
               </div>
             </div>
           </div>
+        </section> */}
+        {/* below is custom by me
+         */}
+        <section>
+          <div className="services_section layout_padding">
+            <div className="container">
+              <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-8 text-center">
+                      <h2 class="transparent-heading mb-4">
+                        Zen Solar Enterprise Solutions
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <p className="services_text">
+                    In the dynamic realm of corporate operations, managing
+                    energy costs has evolved into a strategic imperative.
+                    Community Solar with ZSC offers a transformative solution
+                    for businesses aiming to align with sustainability goals.
+                    <br />
+                    <br />
+                    Community Solar enables collaborative sustainability by
+                    uniting enterprises for a greener future. Its streamlined
+                    approach ensures a smooth transition to renewable energy,
+                    debunking the notion that sustainability hampers
+                    profitability. Participating in ZSC's initiative enhances
+                    your company's reputation as a responsible corporate
+                    citizen.
+                  </p>
+                </div>
+                <div className="col-md-7 col-sm-0">
+                  <div>
+                    <img
+                      src={require("../assets/solar-farm.png")}
+                      className="image_1"
+                      alt="Solar Field"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
         {/* <section className="Entp">
           <div className="what_we_do_section layout_padding">
             <div className="container">
@@ -152,7 +198,7 @@ class Entp extends Component {
             </div>
           </div>
         </section> */}
-        <section className="Entp">
+        {/* <section className="Entp">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -171,39 +217,54 @@ class Entp extends Component {
                   <p className="services_text">
                     Elevate your Community Solar endeavors with ZSC Enterprise,
                     your ultimate partner in navigating the intricate landscape
+                    of distributed generation programs. Elevate your Community
+                    Solar endeavors with ZSC Enterprise, your ultimate partner
+                    in navigating the intricate landscape of distributed
+                    generation programs. ZSC offers a winning blend of
+                    cutting-edge technology, local expertise, and unwavering
+                    customer support, paving the way for enhanced predictability
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
+        {/* modified below */}
+        <section className="Entp">
+          <div className="services_section layout_padding">
+            <div className="container">
+              <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-10 text-center">
+                      <h2 class="normal-heading mb-4">
+                        YOUR ONE-STOP SHOP FOR COMMUNITY SOLAR
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 col-sm-0">
+                  <div>
+                    <img
+                      src={require("../assets/solar-farm.png")}
+                      className="image_2"
+                      alt="Solar Field"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <p className="services_text">
+                    Elevate your Community Solar endeavors with ZSC Enterprise,
+                    your ultimate partner in navigating the intricate landscape
+                    of distributed generation programs.
+                    <br />
+                    <br />
+                    Elevate your Community Solar endeavors with ZSC Enterprise,
+                    your ultimate partner in navigating the intricate landscape
                     of distributed generation programs. ZSC offers a winning
                     blend of cutting-edge technology, local expertise, and
                     unwavering customer support, paving the way for enhanced
-                    predictability, profitability, and subscriber satisfaction
-                    while minimizing risk.
-                    <br />
-                    <br />
-                    ZSC's unrivaled approach combines advanced technology, local
-                    knowledge, and proactive support, empowering projects to
-                    thrive with reduced risks and delighted subscribers.
-                    <br />
-                    <br />
-                    Opt for ZSC Enterprise for a streamlined Community Solar
-                    journey, transforming complex tasks like enrollment,
-                    allocation, and billing into a seamless experience
-                    <br />
-                    <br />
-                    Benefit from comprehensive services that streamline
-                    operations and offer detailed reporting, freeing your time
-                    to focus on core business activities.
-                    <br />
-                    <br />
-                    With ZSC, success is guaranteed. Our solutions optimize each
-                    step of your Community Solar venture for profitability, risk
-                    reduction, and subscriber contentment
-                    <br />
-                    <br />
-                    ZSC stands as the ultimate catalyst for Community Solar
-                    success, offering a strategic advantage in a landscape that
-                    demands excellence. Embark on a journey of enhanced
-                    predictability, profitability, and subscriber delight by
-                    joining forces with ZSC for an unparalleled Community Solar
-                    experience
+                    predictability
                   </p>
                 </div>
               </div>
