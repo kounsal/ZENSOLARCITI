@@ -1,52 +1,61 @@
 import React, { Component } from "react";
-import { Navbar } from "../components/navbar";
+// import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { NavLink } from "react-router-dom";
 import "./entp.css";
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 class Entp extends Component {
   render() {
     return (
       <>
-        <section className="Entp">
+        <div className="bg-img2">
           <div className="header_section">
             <div className="header_left">
               <div className="banner_main">
-                <h1 className="banner_taital">
-                  Large <br />
-                  Enterprise
+                <h1 className="banner_taital ">
+                  Large <span className="custom-text-head2">Enterprise</span>
                 </h1>
+
                 <p className="banner_text">
                   In the dynamic realm of corporate operations, managing energy
                   costs has evolved into a strategic imperative. Community Solar
                   with ZSC offers a transformative solution for businesses
                   aiming to align with sustainability goals.{" "}
                 </p>
+
                 <div className="btn_main">
                   <div className="contact_bt">
-                    <NavLink to="/Contact">Contact Us</NavLink>
+                    <NavLink to="/Contact">Enquire Now</NavLink>
+                  </div>
+                  <div className="contact_bt">
+                    <NavLink to="/Contact">Book a meeting</NavLink>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="header_right">
-              <img
-                src={require("../assets/img/banner-img.jpg")}
-                className="banner_img imagehide"
-              />
-            </div>
           </div>
-        </section>
-        <section className="">
+        </div>
+
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-8 text-center ">
+                      <h2 class="transparent-heading mb-4">
+                        Zen Solar Enterprise Solutions
+                      </h2>
+                    </div>
+                  </div>
+                </div>
                 <div className="col-md-8">
-                  <h1 className="services_taital">
+                  {/* <h1 className="services_taital">
                     Zen Solar Enterprise Solutions
-                  </h1>
-                  <p className="services_text">
+                  </h1> */}
+
+        {/* <p className="services_text">
                     In the dynamic realm of corporate operations, managing
                     energy costs has evolved into a strategic imperative.
                     Community Solar with ZSC offers a transformative solution
@@ -60,8 +69,8 @@ class Entp extends Component {
                     profitability. Participating in ZSC's initiative enhances
                     your company's reputation as a responsible corporate citizen
                   </p>
-                </div>
-                <div className="col-md-4 col-sm-0">
+                </div> */}
+        {/* <div className="col-md-4 col-sm-0">
                   <div>
                     <img
                       src={require("../assets/solar-field.jpg")}
@@ -72,7 +81,53 @@ class Entp extends Component {
               </div>
             </div>
           </div>
+        </section> */}
+        {/* below is custom by me
+         */}
+        <section>
+          <div className="services_section layout_padding">
+            <div className="container">
+              <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-8 text-center">
+                      <h2 class="transparent-heading mb-4">
+                        Zen Solar Enterprise Solutions
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <p className="services_text">
+                    In the dynamic realm of corporate operations, managing
+                    energy costs has evolved into a strategic imperative.
+                    Community Solar with ZSC offers a transformative solution
+                    for businesses aiming to align with sustainability goals.
+                    <br />
+                    <br />
+                    Community Solar enables collaborative sustainability by
+                    uniting enterprises for a greener future. Its streamlined
+                    approach ensures a smooth transition to renewable energy,
+                    debunking the notion that sustainability hampers
+                    profitability. Participating in ZSC's initiative enhances
+                    your company's reputation as a responsible corporate
+                    citizen.
+                  </p>
+                </div>
+                <div className="col-md-7 col-sm-0">
+                  <div>
+                    <img
+                      src={require("../assets/solar-farm.png")}
+                      className="image_1"
+                      alt="Solar Field"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
         {/* <section className="Entp">
           <div className="what_we_do_section layout_padding">
             <div className="container">
@@ -143,7 +198,7 @@ class Entp extends Component {
             </div>
           </div>
         </section> */}
-        <section className="Entp">
+        {/* <section className="Entp">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -162,39 +217,54 @@ class Entp extends Component {
                   <p className="services_text">
                     Elevate your Community Solar endeavors with ZSC Enterprise,
                     your ultimate partner in navigating the intricate landscape
+                    of distributed generation programs. Elevate your Community
+                    Solar endeavors with ZSC Enterprise, your ultimate partner
+                    in navigating the intricate landscape of distributed
+                    generation programs. ZSC offers a winning blend of
+                    cutting-edge technology, local expertise, and unwavering
+                    customer support, paving the way for enhanced predictability
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
+        {/* modified below */}
+        <section className="Entp">
+          <div className="services_section layout_padding">
+            <div className="container">
+              <div className="row">
+                <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center full-height">
+                    <div class="col-md-10 text-center">
+                      <h2 class="normal-heading mb-4">
+                        YOUR ONE-STOP SHOP FOR COMMUNITY SOLAR
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 col-sm-0">
+                  <div>
+                    <img
+                      src={require("../assets/happy-working.png")}
+                      className="image_2"
+                      alt="Solar Field"
+                    />
+                  </div>
+                </div>
+                <div className="col-md-5">
+                  <p className="services_text_1">
+                    Elevate your Community Solar endeavors with ZSC Enterprise,
+                    your ultimate partner in navigating the intricate landscape
+                    of distributed generation programs.
+                    <br />
+                    <br />
+                    Elevate your Community Solar endeavors with ZSC Enterprise,
+                    your ultimate partner in navigating the intricate landscape
                     of distributed generation programs. ZSC offers a winning
                     blend of cutting-edge technology, local expertise, and
                     unwavering customer support, paving the way for enhanced
-                    predictability, profitability, and subscriber satisfaction
-                    while minimizing risk.
-                    <br />
-                    <br />
-                    ZSC's unrivaled approach combines advanced technology, local
-                    knowledge, and proactive support, empowering projects to
-                    thrive with reduced risks and delighted subscribers.
-                    <br />
-                    <br />
-                    Opt for ZSC Enterprise for a streamlined Community Solar
-                    journey, transforming complex tasks like enrollment,
-                    allocation, and billing into a seamless experience
-                    <br />
-                    <br />
-                    Benefit from comprehensive services that streamline
-                    operations and offer detailed reporting, freeing your time
-                    to focus on core business activities.
-                    <br />
-                    <br />
-                    With ZSC, success is guaranteed. Our solutions optimize each
-                    step of your Community Solar venture for profitability, risk
-                    reduction, and subscriber contentment
-                    <br />
-                    <br />
-                    ZSC stands as the ultimate catalyst for Community Solar
-                    success, offering a strategic advantage in a landscape that
-                    demands excellence. Embark on a journey of enhanced
-                    predictability, profitability, and subscriber delight by
-                    joining forces with ZSC for an unparalleled Community Solar
-                    experience
+                    predictability
                   </p>
                 </div>
               </div>
@@ -202,7 +272,7 @@ class Entp extends Component {
           </div>
         </section>
 
-        <section className="">
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -248,9 +318,91 @@ class Entp extends Component {
               </div>
             </div>
           </div>
+        </section> */}
+        {/* modified  */}
+        <section
+          id="models2"
+          className="models2"
+          style={{ background: "#FFF", paddingBottom: "100px" }}
+        >
+          <div className="container" data-aos="fade-up">
+            <div className="section-model2 ">
+              <h2 className="model_title">
+                {" "}
+                EXPERIENCED TEAM + INDUSTRY-LEADING PLATFORM
+              </h2>
+            </div>
+            <div className="row">
+              <div className="col-lg-3" data-aos="fade-up" data-aos-delay={100}>
+                <div className="box featured">
+                  <h2>Elevating Excellence</h2>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw " /> Customers can form
+                      groups or associations to collectively subscribe to the
+                      solar farm.
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check fa-fw" /> By pooling their
+                      subscriptions, they can access lower subscription rates
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
+                <div className="box featured">
+                  <h2>Empowering Energy Ambitions</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Reduction in the home electricity bill
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={300}
+              >
+                <div className="box featured  ">
+                  <h2>Efficiency in Energy Payments</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Conversion of solar credits as dividend in a bulk
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={300}
+              >
+                <div className="box featured  ">
+                  <h2>Benefits and Impact Combined</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Sale of solar credits by prices setted up by the
+                      individuals
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section className="">
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -295,7 +447,7 @@ class Entp extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="Entp">
           <div
             class="row justify-content-center"

@@ -48,7 +48,7 @@ input {
   font-size: 16px;
 }
 .bg-img {
-  /* The image used */
+  /* The image used in home page*/
   background-image: url("/src/assets/solar-field.jpg");
 
   min-height: 726px;
@@ -60,6 +60,21 @@ input {
 
   /* Needed to position the navbar */
   position: relative;
+}
+.bg-img2{
+  /* The image used in enterprise page  */
+  background-image: url("/src/assets/working.png");
+
+  min-height: 726px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+
 }
 .itext{
   z-index: 100;
