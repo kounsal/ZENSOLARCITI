@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Navbar } from "../components/navbar";
+// import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 import { NavLink } from "react-router-dom";
 import "./entp.css";
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 class Entp extends Component {
   render() {
@@ -246,14 +246,14 @@ class Entp extends Component {
                 <div className="col-md-7 col-sm-0">
                   <div>
                     <img
-                      src={require("../assets/solar-farm.png")}
+                      src={require("../assets/happy-working.png")}
                       className="image_2"
                       alt="Solar Field"
                     />
                   </div>
                 </div>
                 <div className="col-md-5">
-                  <p className="services_text">
+                  <p className="services_text_1">
                     Elevate your Community Solar endeavors with ZSC Enterprise,
                     your ultimate partner in navigating the intricate landscape
                     of distributed generation programs.
@@ -272,7 +272,7 @@ class Entp extends Component {
           </div>
         </section>
 
-        <section className="">
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -318,9 +318,91 @@ class Entp extends Component {
               </div>
             </div>
           </div>
+        </section> */}
+        {/* modified  */}
+        <section
+          id="models2"
+          className="models2"
+          style={{ background: "#FFF", paddingBottom: "100px" }}
+        >
+          <div className="container" data-aos="fade-up">
+            <div className="section-model2 ">
+              <h2 className="model_title">
+                {" "}
+                EXPERIENCED TEAM + INDUSTRY-LEADING PLATFORM
+              </h2>
+            </div>
+            <div className="row">
+              <div className="col-lg-3" data-aos="fade-up" data-aos-delay={100}>
+                <div className="box featured">
+                  <h2>Elevating Excellence</h2>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw " /> Customers can form
+                      groups or associations to collectively subscribe to the
+                      solar farm.
+                    </li>
+                    <li>
+                      <i className="fa-solid fa-check fa-fw" /> By pooling their
+                      subscriptions, they can access lower subscription rates
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={200}
+              >
+                <div className="box featured">
+                  <h2>Empowering Energy Ambitions</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Reduction in the home electricity bill
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={300}
+              >
+                <div className="box featured  ">
+                  <h2>Efficiency in Energy Payments</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Conversion of solar credits as dividend in a bulk
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="col-lg-3 mt-3 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay={300}
+              >
+                <div className="box featured  ">
+                  <h2>Benefits and Impact Combined</h2>
+
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-check fa-fw" />
+                      Sale of solar credits by prices setted up by the
+                      individuals
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section className="">
+        {/* <section className="">
           <div className="services_section layout_padding">
             <div className="container">
               <div className="row">
@@ -365,7 +447,7 @@ class Entp extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="Entp">
           <div
             class="row justify-content-center"

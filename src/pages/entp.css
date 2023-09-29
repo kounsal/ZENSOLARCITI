@@ -403,6 +403,20 @@ button {
     letter-spacing: 0em;
     text-align: left;
 }
+.services_text_1{
+    width: 90%;
+    /* float: left; */
+    max-width: 403px; /*custom*/
+    font-size: 22px;
+    font-weight: 300;
+    color: #060606;
+    margin: 0 auto; /* Center horizontally */
+  margin-top: 50px; /* Adjusted margin-top */
+  padding: 0 20px; /* Added padding for content */
+    line-height: 26.63px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 .moremore_bt {
     width: 170px;
@@ -431,7 +445,8 @@ button {
     height: 68vh; /* Set the height to 60% of the viewport height */
     max-width: none; /* Remove the max-width constraint */
     max-height: none; /* Remove the max-height constraint */
-    border-radius: 121px 0px 121px 0px;
+
+    border-radius: 100px 0px;
 
   }
   
@@ -442,8 +457,9 @@ button {
     max-height: none; /* Remove the max-height constraint */
     
     /* Specify the border-radius for individual corners */
-    /* border-radius: 121px 0px 0px 121px; */
-    border-radius: 0px 121px 0px 121px;
+   
+   
+    border-radius: 0px 100px;
   }
   
   
@@ -576,3 +592,171 @@ button {
 }
 
 
+.models2 .row {
+    padding-top: 40px;
+  }
+  
+  .models2 .box {
+    padding: 60px 40px;
+    box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
+    background: #fff;
+    min-height: 100%;
+    border-top: 4px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .models2 h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e;
+  }
+  
+  .models2 h4 {
+    font-size: 48px;
+    color: #37517e;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 25px;
+  }
+  
+  .models2 h4 sup {
+    font-size: 28px;
+  }
+  
+  .models2 h4 span {
+    color: #47b2e4;
+    font-size: 18px;
+    display: block;
+  }
+  
+  .models2 ul {
+    padding: 20px 0;
+    list-style: none;
+    color: #999;
+    text-align: left;
+    line-height: 20px;
+  }
+  
+  .models2 ul li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+  }
+  
+  .models2 ul i {
+    color: #28a745;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
+  
+  .models2 ul .na {
+    color: #ccc;
+  }
+  
+  .models2 ul .na i {
+    color: #ccc;
+  }
+  
+  .models2 ul .na span {
+    text-decoration: line-through;
+  }
+  
+  .models2 .buy-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    color: #47b2e4;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: 0.3s;
+    border: 1px solid #47b2e4;
+   
+   
+   
+   
+  }
+  
+  .models2 .buy-btn:hover {
+    background: #47b2e4;
+    color: #fff;
+  }
+  
+  .models2 .featured {
+    border-top-color: #ff3e03;
+    border-radius: 50px; 
+    border: 2px #000F52 solid;
+   
+  
+  }
+  .featured h2{
+    text-align: center; color: #000F52; font-size: 24px; font-family: Nunito Sans; font-weight: 700; word-wrap: break-word;width: 201px;
+  }
+  
+  .models2 .featured .buy-btn {
+    width: 193px; 
+    height: 40px; 
+    padding-left: 12px; 
+    padding-right: 12px; 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    background: #000F52; 
+    border-radius: 10px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    display: inline-flex
+  }
+  .models2 .featured .buy-btn .text
+  {color: white;
+     font-size: 16px; 
+     font-family: Poppins; 
+     font-weight: 400; word-wrap: break-word}
+  .models2 .featured .buy-btn:hover {
+    background: #23a3df;
+  }
+  
+  @media (max-width: 992px) {
+    .models2 .box {
+      max-width: 60%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .models2 .box {
+      max-width: 80%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .models2 .box {
+      max-width: 100%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  .section-model2 {
+    text-align: center;
+    padding-bottom: 30px;
+  
+  }
+  .section-model2 h2 {
+    
+    font-size: 40px; 
+    font-family: Poppins;
+     font-weight: 700; 
+     word-wrap: break-word;
+    padding-bottom: 30pxs;
+    text-align: center;
+    text-transform: uppercase;
+  
+  
+   
+    position: relative;
+    color: #F68E3C;
+  }
+  
