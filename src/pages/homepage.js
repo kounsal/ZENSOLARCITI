@@ -112,7 +112,7 @@ class Homepage extends React.Component {
                     <a href>Secure Our Planet's Future:</a>
                   </h4>
 
-                  <p>
+                  <p className="custom-font">
                     Zen Solarciti Lights Your Path to a Cleaner, Brighter
                     Future. Choose Sustainable Energy, Safeguarding Our Planet
                     for Generations to Come.
@@ -132,7 +132,7 @@ class Homepage extends React.Component {
                   <h4>
                     <a href>Savings That Shine:</a>
                   </h4>
-                  <p>
+                  <p className="custom-font">
                     Your Investment, Multiplied. Bid Farewell to High Bills,
                     Embrace Substantial Savings. Our Solar Solutions Cut Costs,
                     Unlock Incentives, and Tax Benefits, Smart Financial Choice
@@ -153,7 +153,7 @@ class Homepage extends React.Component {
                     <a href>Join a Community of Changemakers:</a>
                   </h4>
 
-                  <p>
+                  <p className="custom-font">
                     Zen Solarciti Values Sustainability, Progress, Positive
                     Change. Embrace Solar Energy – Contribute to Global Shift
                     Toward Clean Practices. Unite with Like-Minded Visionaries
@@ -173,7 +173,7 @@ class Homepage extends React.Component {
                   <h4>
                     <a href>Simplifying Solar Power for You</a>
                   </h4>
-                  <p>
+                  <p className="custom-font">
                     Zen Solarciti's Expertise Makes Clean Energy Accessible.
                     Tailored Solutions for Homes, Businesses, Communities.
                     Reliable Energy, Reduced Bills. Choose Zen Solarciti for a

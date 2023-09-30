@@ -13,6 +13,10 @@
     background-color:  #C3E5FF !important;
     padding-top: 0px !important;
   }
+.Entp1{
+    background-color:   #F68E3C !important;
+    padding-top: 0px !important;
+  }
 
 
 h1,
@@ -633,7 +637,9 @@ button {
   .models2 ul {
     padding: 20px 0;
     list-style: none;
-    color: #999;
+    /* color: #999; */
+    color: #000F52;
+
     text-align: left;
     line-height: 20px;
   }
@@ -644,7 +650,8 @@ button {
   }
   
   .models2 ul i {
-    color: #28a745;
+    /* color: #28a745; */
+    color: #000F52;
     font-size: 24px;
     position: absolute;
     left: 0;

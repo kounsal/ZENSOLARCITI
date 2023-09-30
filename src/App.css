@@ -76,6 +76,21 @@ input {
   position: relative;
 
 }
+.bg-img3{
+  /* The image used in community page  */
+  background-image: url("/src/assets/solar-farm-bg.png");
+
+  min-height: 726px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+
+}
 .itext{
   z-index: 100;
   position: absolute;
@@ -462,7 +477,8 @@ section {
 .models ul {
   padding: 20px 0;
   list-style: none;
-  color: #999;
+  /* color: #999; */
+  color: #000F52;
   text-align: left;
   line-height: 20px;
 }
@@ -473,7 +489,8 @@ section {
 }
 
 .models ul i {
-  color: #28a745;
+  /* color: #28a745; */
+  color: #000F52;
   font-size: 24px;
   position: absolute;
   left: 0;
