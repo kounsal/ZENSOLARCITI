@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/Community" element={[<Navbar />, <Community />]} />
           <Route path="/investment" element={[<Navbar />, <Investment />]} />
           <Route path="/signin" element={<SignIN />} />
-          <Route path="/Enterprise" element={[<Navbar />, <Entp />]} />
+          <Route path="/Enterprise" element={[ <Entp />]} />
           <Route path="/Contact" element={[<Navbar />, <Contact />]} />
         </Routes>
       </BrowserRouter>

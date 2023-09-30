@@ -34,38 +34,13 @@ class Navbar extends Component {
                            Community
                         </NavLink>
                      </li>
-                    
-                     <li className="nav-item dropdown">
-                        <a
-                           className="nav-link dropdown-toggle"
-                           href="/"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false"
-                        >
-                          Investors
-                        </a>
-                        <ul className="dropdown-menu">
-                           <li>
-                           <NavLink className="dropdown-item" to="/Enterprise">
-                           Enterprise Solution
+                     <li className="nav-item">
+                        <NavLink className="nav-link" to="/Enterprise">
+                        Enterprise Solution
                         </NavLink>
-                           </li>
-                           {/* <li>
-                              <a className="dropdown-item" href="/">
-                                 Another action
-                              </a>
-                           </li>
-                           <li>
-                              <hr className="dropdown-divider" />
-                           </li>
-                           <li>
-                              <a className="dropdown-item" href="/">
-                                 Something else here
-                              </a>
-                           </li> */}
-                        </ul>
                      </li>
+                    
+                  
                      {/* <li className="nav-item dropdown">
                         <a
                            className="nav-link dropdown-toggle"

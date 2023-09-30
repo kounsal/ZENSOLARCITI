@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Footer } from "../components/footer";
 import { NavLink } from "react-router-dom";
 import "./entp.css";
+import { Navbar } from "../components/navbar";
 // import { hover } from "@testing-library/user-event/dist/hover";
 
 class Entp extends Component {
@@ -10,6 +11,7 @@ class Entp extends Component {
     return (
       <>
         <div className="bg-img2">
+        <Navbar />
           <div className="header_section">
             <div className="header_left">
               <div className="banner_main">
