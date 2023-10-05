@@ -772,3 +772,58 @@ button {
     color: #F68E3C;
   }
   
+  /* custom */
+  /* Add media query for screens smaller than 768px */
+/* Add media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Adjust font size, margins, and paddings for smaller screens */
+  .services_section h2.transparent-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .services_section p.services_text {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  
+  /* Center align text on smaller screens */
+  .services_section .col-md-5 {
+    text-align: center;
+  }
+  .banner_taital {
+    font-size: 40px; /* Adjust the font size as needed */
+    padding-top: 40px; /* Adjust the padding as needed */
+  }
+  .header_section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header_left,
+  .header_right {
+    width: 100%;
+    padding: 0;
+  }
+  .banner_main {
+    margin-top: 60px; /* Adjust the margin-top as needed */
+    padding-left: 8px; /* Adjust the padding-left as needed */
+    padding-bottom: 8%; /* Adjust the padding-bottom as needed */
+  }
+  .contact_bt {
+    width: 100%; /* Adjust the width as needed */
+    margin-left: 0; /* Remove margin-left on smaller screens */
+  }
+  .contact_bt:nth-child(2) a {
+    width: auto; /* Adjust the width to fit content */
+    padding: 10px 20px; /* Padding for the second child on smaller screens */
+  }
+
+  /* Styles for the first child button on smaller screens */
+  .contact_bt:first-child a {
+    padding-left: 20px; /* Adjust the left padding for the first child on smaller screens */
+    padding-right: 40px; /* Adjust the right padding for the first child on smaller screens */
+  }
+}
+
