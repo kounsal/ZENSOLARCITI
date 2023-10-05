@@ -817,7 +817,7 @@ button {
   }
   .contact_bt:nth-child(2) a {
     width: auto; /* Adjust the width to fit content */
-    padding: 10px 20px; /* Padding for the second child on smaller screens */
+    padding: 10px 17px; /* Padding for the second child on smaller screens */
   }
 
   /* Styles for the first child button on smaller screens */

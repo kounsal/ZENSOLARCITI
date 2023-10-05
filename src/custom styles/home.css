@@ -79,7 +79,7 @@ line-height: normal;
     margin: 10px ; /* Reduce margin for smaller screens */
  
   
-    width: 100%; /* Make buttons full width for smaller screens */
+    width: 90%; /* Make buttons full width for smaller screens */ /*custom*/
   }
 }
 
