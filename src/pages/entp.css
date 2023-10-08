@@ -212,8 +212,12 @@ button {
 }
 
 .custom-text-head2{
-    color:#F68E3C
+    color:#F68E3C;
+    display: inline;
+    margin-left: 10px;
 }
+
+
 
 .banner_img{
     width: 100%;
@@ -240,13 +244,29 @@ button {
 .banner_taital {
     width: 100%;
     float: left;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 40px; /*custom needed*/
     color:#FEFEFE;
     padding-top: 80px;
     text-transform: uppercase;
     font-weight: bold;
 }
-
+.banner_title{
+  
+    width: 100%;
+    float: left;
+    /* font-size: 60px; */
+    font-size: 40px;
+    color: #FEFEFE;
+    padding-top: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
 .banner_text {
   
      width: 90%;
@@ -825,5 +845,6 @@ button {
     padding-left: 20px; /* Adjust the left padding for the first child on smaller screens */
     padding-right: 40px; /* Adjust the right padding for the first child on smaller screens */
   }
+  
 }
 

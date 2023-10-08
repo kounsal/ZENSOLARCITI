@@ -14,7 +14,7 @@ class Community extends Component {
           <div className="header_section">
             <div className="header_left">
               <div className="banner_main">
-                <h1 className="banner_taital ">
+                <h1 className="banner_title">
                   COMMUNITY SOLAR FOR{" "}
                   <span className="custom-text-head2">
                     HOMEOWNERS AND RENTERS
