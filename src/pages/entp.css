@@ -816,6 +816,14 @@ button {
     font-size: 40px; /* Adjust the font size as needed */
     padding-top: 40px; /* Adjust the padding as needed */
   }
+  
+    .banner_title {
+      font-size: 40px; /* Adjust font size for smaller screens */
+      padding-top: 40px; /* Adjust padding for smaller screens */
+      white-space: normal; /* Allow text to wrap on smaller screens */
+   flex-direction: column;
+  }
+
   .header_section {
     flex-direction: column;
     text-align: center;
