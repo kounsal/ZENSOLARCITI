@@ -9,9 +9,19 @@ import { Community } from "./pages/comunity";
 import { Entp } from "./pages/enterprise";
 import { Contact } from "./pages/contact";
 import { Navbar } from "./components/navbar";
-
+import { auth, provider } from "./firebasetest";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setActiveUser,
+  setUserLogOutState,
+  selectUserEmail,
+  selectUserName,
+} from "./features/userSlice";
 class App extends Component {
   render() {
+    const dispatch = useDispatch();
+    const userName = useSelector(selectUserName);
+    const userEmail = useSelector(selectUserEmail); // by this we get the state
     return (
       <BrowserRouter>
         <Routes>
