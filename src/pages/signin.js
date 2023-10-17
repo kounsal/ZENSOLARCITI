@@ -1,8 +1,37 @@
 // import { Component } from "react";
 import "./page.css";
+import { auth, provider } from "./../firebasetest";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setActiveUser,
+  setUserLogOutState,
+  selectUserEmail,
+  selectUserName,
+} from "../features/userSlice";
 // class SignIN extends Component{
 //     render(){
 function SignIN() {
+  const dispatch = useDispatch();
+  const userName = useSelector(selectUserName);
+  const userEmail = useSelector(selectUserEmail); // by this we get the state
+  const handleSignOut = () => {
+    auth.signOut().then(() => {
+      dispatch(setUserLogOutState()).catch((error) => {
+        alert(error.message);
+      }); // user session terminated and sent state by dispatch which will empty out the active user state
+    });
+  };
+  const handleSignIn = () => {
+    // auth.signInWithEmailAndPassword(); // i will use this later
+    auth.signInWithPopup(provider).then((result) => {
+      dispatch(
+        setActiveUser({
+          userName: result.user.displayName, // payload
+          userEmail: result.user.email,
+        })
+      );
+    });
+  };
   return (
     <div className="signbox">
       <div className="row g-0">
@@ -14,7 +43,7 @@ function SignIN() {
                 <div className="col-md-9 col-lg-8 mx-auto">
                   <h3 className="login-heading mb-4">Welcome back!</h3>
                   {/* Sign In Form */}
-                  <form>
+                  {/* <form>
                     <div className="form-floating mb-3">
                       <input
                         type="email"
@@ -59,7 +88,13 @@ function SignIN() {
                         Forgot password?
                       </div>
                     </div>
-                  </form>
+                  </form> */}
+                  {/* now we will setted up redux  */}
+                  {userName ? (
+                    <button onClick={handleSignOut}>SignOut</button>
+                  ) : (
+                    <button onClick={handleSignIn}>SignIn</button>
+                  )}
                 </div>
               </div>
             </div>

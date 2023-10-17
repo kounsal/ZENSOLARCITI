@@ -9,8 +9,7 @@ import { Join } from "./components/join";
 // import { Entp } from "./pages/enterprise";
 // import { Contact } from "./pages/contact";
 import { Navbar } from "./components/navbar";
-import { auth, provider } from "./firebasetest";
-import { useDispatch, useSelector } from "react-redux";
+
 // changed for app based
 import Community from "./pages/comunity";
 import Entp from "./pages/enterprise";
@@ -18,19 +17,11 @@ import Contact from "./pages/contact";
 import Homepage from "./pages/homepage";
 import Investment from "./pages/Investment";
 import SignIN from "./pages/signin";
-import {
-  setActiveUser,
-  setUserLogOutState,
-  selectUserEmail,
-  selectUserName,
-} from "./features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 // converted from class to the function type
 // class App extends Component {
 //   render() {
 function App() {
-  // const dispatch = useDispatch();
-  // const userName = useSelector(selectUserName);
-  // const userEmail = useSelector(selectUserEmail); // by this we get the state
   return (
     <BrowserRouter>
       <Routes>
