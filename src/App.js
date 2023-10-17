@@ -18,10 +18,10 @@ import {
   selectUserName,
 } from "./features/userSlice";
 class App extends Component {
+  // const dispatch = useDispatch();
+  // const userName = useSelector(selectUserName);
+  // const userEmail = useSelector(selectUserEmail); // by this we get the state
   render() {
-    const dispatch = useDispatch();
-    const userName = useSelector(selectUserName);
-    const userEmail = useSelector(selectUserEmail); // by this we get the state
     return (
       <BrowserRouter>
         <Routes>
