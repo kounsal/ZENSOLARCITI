@@ -1,18 +1,30 @@
 // import { Component } from "react";
 import "./page.css";
 import { auth, provider } from "./../firebasetest";
-import { signInWithPopup } from "firebase/auth";
+import {
+  signInWithPopup,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import {
   setActiveUser,
   setUserLogOutState,
   selectUserEmail,
   selectUserName,
+  selectUser,
 } from "../features/userSlice";
 // class SignIN extends Component{
 //     render(){
 function SignIN() {
   const dispatch = useDispatch();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  // below are for googleauth and redux
+  const user = useSelector(selectUser);
   const userName = useSelector(selectUserName);
   const userEmail = useSelector(selectUserEmail); // by this we get the state
   // const handleSignOut = () => {
@@ -49,6 +61,7 @@ function SignIN() {
       .then((result) => {
         dispatch(
           setActiveUser({
+            user: result.user.user,
             userName: result.user.displayName,
             userEmail: result.user.email,
           })
@@ -57,6 +70,39 @@ function SignIN() {
       .catch((error) => {
         alert(error.message);
       });
+  };
+  // for signin with email and password
+  const signIn = (e) => {
+    e.preventDefault(); // this will save the page from reloading
+
+    // some fancy firebase login connection
+
+    // auth
+    //   .signInWithEmailAndPassword(email, password)
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        navigate("/");
+      })
+
+      .catch((error) => alert(error.message));
+  };
+
+  const register = (e) => {
+    e.preventDefault();
+
+    // auth
+    //   .createUserWithEmailAndPassword(email, password)
+
+    createUserWithEmailAndPassword(auth, email, password) // changed syntax
+      .then((auth) => {
+        // this means  it successfully created a new user with email and password
+        // console.log(auth);
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => alert(error.message)); // it will give the error on screen if any error ocuured
   };
 
   return (
@@ -117,10 +163,62 @@ function SignIN() {
                     </div>
                   </form> */}
                   {/* now we will setted up redux  */}
+                  {/* for google */}
                   {userName ? (
                     <button onClick={handleSignOut}>SignOut</button>
                   ) : (
                     <button onClick={handleSignIn}>SignIn</button>
+                  )}
+                  {/* for email and password  */}
+                  {userName ? (
+                    <button onClick={handleSignOut}>SignOut</button>
+                  ) : (
+                    <form>
+                      <div className="form-floating mb-3">
+                        <input
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          className="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label htmlFor="floatingInput">Email address</label>
+                      </div>
+                      <div className="form-floating mb-3">
+                        <input
+                          type="password"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          className="form-control"
+                          id="floatingPassword"
+                          placeholder="Password"
+                        />
+                        <label htmlFor="floatingPassword">Password</label>
+                      </div>
+
+                      <div className="d-grid">
+                        <button
+                          type="submit"
+                          onClick={signIn}
+                          className="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                        >
+                          Sign in
+                        </button>
+                        <p>
+                          By signing-in you agree to Zensolarciti's condition of
+                          Use & Sale. Please see our Privacy Notice , our
+                          Cookies Notice and our Interest-Based Ads Notice
+                        </p>
+                        <button
+                          type="submit"
+                          onClick={register}
+                          className="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
+                        >
+                          Register
+                        </button>
+                      </div>
+                    </form>
                   )}
                 </div>
               </div>

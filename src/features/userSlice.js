@@ -13,10 +13,12 @@ const userSlice = createSlice({
   reducers: {
     //created functions for handling user
     setActiveUser: (state, action) => {
+      state.user = action.payload.user;
       state.userName = action.payload.userName;
       state.userEmail = action.payload.userEmail;
     },
     setUserLogOutState: (state) => {
+      state.user = null;
       state.userName = null;
       state.userEmail = null;
     },
@@ -24,6 +26,7 @@ const userSlice = createSlice({
 });
 
 export const { setActiveUser, setUserLogOutState } = userSlice.actions;
+export const selectUser = (state) => state.user.user;
 export const selectUserName = (state) => state.user.userName; // from user state grab the userName this will make the above code work
 export const selectUserEmail = (state) => state.user.userEmail; // from user state grab the userName this will make the above code work
 
