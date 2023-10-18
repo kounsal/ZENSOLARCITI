@@ -1,6 +1,7 @@
 // import { Component } from "react";
 import "./page.css";
 import { auth, provider } from "./../firebasetest";
+import { signInWithPopup } from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setActiveUser,
@@ -14,24 +15,50 @@ function SignIN() {
   const dispatch = useDispatch();
   const userName = useSelector(selectUserName);
   const userEmail = useSelector(selectUserEmail); // by this we get the state
+  // const handleSignOut = () => {
+  //   auth.signOut().then(() => {
+  //     dispatch(setUserLogOutState()).catch((error) => {
+  //       alert(error.message);
+  //     }); // user session terminated and sent state by dispatch which will empty out the active user state
+  //   });
+  // };
+  // const handleSignIn = () => {
+  //   // auth.signInWithEmailAndPassword(); // i will use this later
+  //   auth.signInWithPopup(provider).then((result) => {
+  //     dispatch(
+  //       setActiveUser({
+  //         userName: result.user.displayName, // payload
+  //         userEmail: result.user.email,
+  //       })
+  //     );
+  //   });
+  // };
   const handleSignOut = () => {
-    auth.signOut().then(() => {
-      dispatch(setUserLogOutState()).catch((error) => {
+    auth
+      .signOut()
+      .then(() => {
+        dispatch(setUserLogOutState());
+      })
+      .catch((error) => {
         alert(error.message);
-      }); // user session terminated and sent state by dispatch which will empty out the active user state
-    });
+      });
   };
+
   const handleSignIn = () => {
-    // auth.signInWithEmailAndPassword(); // i will use this later
-    auth.signInWithPopup(provider).then((result) => {
-      dispatch(
-        setActiveUser({
-          userName: result.user.displayName, // payload
-          userEmail: result.user.email,
-        })
-      );
-    });
+    signInWithPopup(auth, provider) // by updated syntax and sill create with email and pass if needed
+      .then((result) => {
+        dispatch(
+          setActiveUser({
+            userName: result.user.displayName,
+            userEmail: result.user.email,
+          })
+        );
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
+
   return (
     <div className="signbox">
       <div className="row g-0">
