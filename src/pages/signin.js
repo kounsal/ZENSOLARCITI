@@ -1,5 +1,7 @@
 // import { Component } from "react";
 import "./page.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { auth, provider } from "./../firebasetest";
 import {
   signInWithPopup,
@@ -81,9 +83,29 @@ function SignIN() {
     //   .signInWithEmailAndPassword(email, password)
 
     signInWithEmailAndPassword(auth, email, password)
-      .then((auth) => {
+      .then((result) => {
+        dispatch(
+          setActiveUser({
+            user: result.user.user,
+            userName: result.user.displayName,
+            userEmail: result.user.email,
+          })
+        );
+        toast.success(" Signed In", {
+          position: "top-left",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
         navigate("/");
       })
+      // .then((auth) => {
+      //   navigate("/");
+      // })
 
       .catch((error) => alert(error.message));
   };
@@ -98,6 +120,16 @@ function SignIN() {
       .then((auth) => {
         // this means  it successfully created a new user with email and password
         // console.log(auth);
+        toast.success("User Created", {
+          position: "top-left",
+          autoClose: 1000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
         if (auth) {
           navigate("/");
         }
@@ -107,6 +139,18 @@ function SignIN() {
 
   return (
     <div className="signbox">
+      <ToastContainer
+        position="top-left"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <div className="row g-0">
         <div className="d-none d-md-flex col-md-4 col-lg-6 bg-image" />
         <div className="col-md-8 col-lg-6">
