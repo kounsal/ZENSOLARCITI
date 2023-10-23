@@ -91,16 +91,7 @@ function SignIN() {
             userEmail: result.user.email,
           })
         );
-        toast.success(" Signed In", {
-          position: "top-left",
-          autoClose: 1000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
+
         navigate("/");
       })
       // .then((auth) => {
@@ -130,9 +121,11 @@ function SignIN() {
           progress: undefined,
           theme: "dark",
         });
-        if (auth) {
-          navigate("/");
-        }
+        // if (auth) {
+        //   navigate("/");
+        // }
+        setEmail("");
+        setPassword("");
       })
       .catch((error) => alert(error.message)); // it will give the error on screen if any error ocuured
   };
